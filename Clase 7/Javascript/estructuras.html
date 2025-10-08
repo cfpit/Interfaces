@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Condicionales. Parsing. Uso de prompt para ingreso de datos
+        let x = parseInt(prompt("Ingrese un número:"));
+        if (x > 0) {
+            console.log(x + " es un número positivo.");
+        } else if (x < 0) {
+            console.log(x + " es un número negativo.");
+        } else {
+            console.log("El número es cero.");
+        }
+
+        //Arrays
+        let arr = [1, 2, 3, 4, 5];
+        console.log("Array original:", arr);
+        arr.push(6); // Agrega un elemento al final
+        console.log("Después de push:", arr);
+        arr.pop(); // Elimina el último elemento
+        console.log("Después de pop:", arr);
+        arr.shift(); // Elimina el primer elemento
+        console.log("Después de shift:", arr);
+        arr.unshift(0); // Agrega un elemento al inicio
+        console.log("Después de unshift:", arr);
+
+        console.log("Recorriendo el array con for:");
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+        
+        console.log("Recorriendo el array con for...of:");
+        for (let value of arr) {
+            console.log(value);
+        }
+
+        console.log("Recorriendo el array con forEach:");
+        arr.forEach(value => console.log(value));
+
+
+        //Objetos
+        let obj = {
+            nombre: "Juan",
+            edad: 30,
+            ciudad: "Madrid"
+        };
+        console.log("Objeto original:", obj);
+        console.log("Nombre:", obj.nombre);
+        console.log("Edad:", obj.edad);
+        console.log("Ciudad:", obj.ciudad);
+    </script>
+</body>
+</html>

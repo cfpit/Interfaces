@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //scope de variables
+        var a = 1; // variable global
+        let b = 2; // variable de bloque
+        const c = 3; // constante de bloque 
+
+        function test() {
+            var a = 4; // variable local a la función
+            let b = 5; // variable local a la función
+            const c = 6; // constante local a la función
+            console.log("Dentro de la función:");
+            console.log("a:", a); // 4
+            console.log("b:", b); // 5
+            console.log("c:", c); // 6
+        }
+
+        test();
+
+        console.log("Fuera de la función:");
+        console.log("a:", a); // 1
+        console.log("b:", b); // 2
+        console.log("c:", c); // 3
+
+        if (true) {
+            var a = 7; // variable global (sobrescribe la anterior)
+            let b = 8; // variable de bloque
+            const c = 9; // constante de bloque
+            console.log("Dentro del bloque if:");
+            console.log("a:", a); // 7
+            console.log("b:", b); // 8
+            console.log("c:", c); // 9
+        }
+    </script>
+</body>
+</html>

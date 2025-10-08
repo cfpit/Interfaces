@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="mostrar()">Mostrar Div</button>
+    <button onclick="ocultar()">Ocultar Div</button>
+    <div id="miDiv" style="display:none; margin-top:10px;">¡Hola! Este es el texto que se muestra y oculta.</div>
+    
+    <script>
+        //Desarrollar una aplicación que al hacer clic sobre la expresión “Mostrar Div”, aparezca un texto. Luego, al hacer clic sobre sobre la expresión “Ocultar Div”, oculte el texto previamente visualizado. Usar onclick en el HTML y las funciones mostrar() y ocultar() en JavaScript.
+        function mostrar() {
+            document.getElementById("miDiv").style.display = "block";
+        }
+        function ocultar() {
+            document.getElementById("miDiv").style.display = "none";
+        }
+    </script>
+</body>
+</html>
